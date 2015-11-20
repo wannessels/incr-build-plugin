@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>be.waines.maven.incremental</groupId>
+	<artifactId>distributed-common</artifactId>
+	<version>3.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	
+	<parent>
+		<groupId>be.waines.maven</groupId>
+		<artifactId>incremental-build-parent</artifactId>
+		<version>3.1.0-SNAPSHOT</version>
+	</parent>
+	
+	<properties>
+		<jersey.version>2.6</jersey.version> <!-- 2.6 is laatste versie die draait in Java 6 -->
+	</properties>
+	
+	
+	<dependencies>
+	
+		<dependency>
+		    <groupId>org.glassfish.jersey.core</groupId>
+		    <artifactId>jersey-common</artifactId>
+		    <version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.glassfish.jersey.media</groupId>
+		    <artifactId>jersey-media-json-jackson</artifactId>
+		    <version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.3.2</version>
+		</dependency>
+
+		
+		<dependency>
+			<groupId>be.waines.maven</groupId>
+			<artifactId>incremental-build</artifactId>
+			<version>3.1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
+
+</project>
